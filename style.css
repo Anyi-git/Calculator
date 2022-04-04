@@ -1,0 +1,126 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+} 
+:root{
+    --pcolor:#070927;
+    --scolor:#181b50;
+}
+.container_calculator{
+    width: 100%;
+    height: 100vh;
+    background-color: #24242e;
+    display: grid;
+    place-content: center;
+}
+
+.wrapper{
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+.container_calculator .wrapper .result{
+    background-color: #fff;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    padding-left:6px;
+    font-weight: 500;
+}
+.number{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "can can one two"
+    "three four five six"
+    "seven eigh nine plus"
+    "ten eleven zero plus"
+    "zero1 zero2 eqal empty  "
+    ;
+
+}
+.buttons{
+    background-color: var(--scolor);
+    border: 0.3px solid #0f0f31;
+    display: grid;
+    place-content: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.can{
+    background-color: #fc2205dd;
+    grid-area: can;
+}
+.eqal{
+    background-color: #ffa600fd;
+    grid-area: eqal;
+}
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eigh{
+    grid-area: eigh;
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.ten{
+    grid-area: ten;
+}
+
+.eleven{
+    grid-area: eleven;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.zero1{
+    grid-area: zero1;
+}
+
+.zero2{
+    grid-area: zero2;
+}
+.empty{
+    grid-area: empty;
+}
